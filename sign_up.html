@@ -7,6 +7,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goal - sign up today!</title>
     <link rel="stylesheet" href="style_before_log.css">
+    <style>
+        
+        a {
+            align-self: center;
+            text-decoration: none;
+        }
+        .bar_text {
+            color:#BA3B0A;
+            font-size: 20px;
+            align-self: center;
+            margin:20px;
+        }
+        #separator {
+            flex-grow:10;
+        }
+        .login {
+            display:flex;
+            margin:10px;
+            align-self:center;
+            /*TEKST*/
+            color:#BA3B0A;
+            font-size:20px;
+            align-items:center;
+            text-align:center;
+            font-weight: bolder;
+            margin-right: 30px;
+            
+        }
+        #bar {
+            display:flex;
+            background-color:rgb(228, 180, 91);
+            width:100%;
+            height:50px;
+            border-bottom: solid 3px rgb(232, 183, 91);
+            box-shadow: 15px;
+            justify-content: space-around;
+            
+        }
+        .home {
+            background-color:rgb(231, 185, 101);
+            height:130px;
+            margin:0px;
+            padding:0px;
+            display:flex;
+            border: solid 1px rgb(225, 190, 110);
+            justify-content: space-around;
+            box-shadow: 20px;
+        }
+        html, body {
+            height:100%;
+        }
+        body{
+            background-color:beige;
+            margin:0px;
+        }
+        .log {
+            margin:10px;
+            display:flex;
+            height:800px;
+            width:750px;
+            background-color: rgb(231, 185, 101);
+            flex-wrap:wrap;
+            justify-content: center;
+            align-self:center;
+            margin:50px;
+        }
+        select{
+            color: #643b2b;   
+            margin-left: 10px;         
+        }
+        #gender {
+            display:flex;
+            align-self: center;
+            justify-self: center;
+            margin-left: 5%;
+        }
+        option{
+            color: #643b2b;
+        }
+        input[type="text"]{
+            width: 90%;
+            padding: 12px 20px;
+            margin-left: 5%;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:nth-child(10){
+            width: 42%;
+            padding: 12px 20px;
+            /* margin-left: 5%; */
+            margin-bottom: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:nth-child(9){
+            width: 42%;
+            padding: 12px 20px;
+            margin-left: 5%;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea{
+            columns: 40;
+            width: 90%;
+            height: 150px;;
+            padding: 12px 20px;
+            margin-left: 5%;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input[type="submit"] {
+            width:90%;
+            padding: 6px 20px;
+            margin-left: 5%;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            border: none;
+            background-color:#f5f5f5
+        }
+        input[type=submit]:hover {
+            background-color:#e9e9ed;
+        } 
+        #nopass {
+            display:flex;
+            justify-content: center;
+            text-decoration: none;
+            color:#ac3c10;
+        }
+        #background, h3 {
+            display:flex;
+            width:100%;
+            justify-content: center;
+            align-self:center;
+            color:#BA3B0A;
+        }
+        h3 {
+            font-size:25px;
+        }
+    </style>
 </head>
 <body>
     <div id="home">
@@ -32,6 +184,50 @@
         <div class="bar_text"> Contact </div>
     </div>
 
+
+    <div id="background">
+        <div class="log"> 
+            <h3>Sign up today!</h3>
+            <form>
+                <input type="text" id="text" name="name" placeholder="Name">
+                <input type="text" id="text" name="surname" placeholder="Surname">
+                <input type="text" id="email" name="email" placeholder="Email address">
+                <input type="text" id="password" name="password" placeholder="Your password">
+                <br>
+                <div id="gender">
+                     <label type = "text"><b>Gender</b></label>
+                <select>
+                    <option>Select</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Other</option>
+                </select>
+                <br>
+                </div>
+                    <input type="text" id="text" list="language-list" require placeholder="Select language">
+                    <datalist id="language-list">
+                    <option value="english">
+                    <option value="polish">
+                    <option value="german">
+                    <option value="italian">
+                    <option value="french">
+                    </option>
+                </datalist>
+                <input type="text" id="text" name="address" placeholder="Address">
+                <input type="text" id="text" name="postal_code" placeholder="Postal code">
+                <input type="text" id="text" name="country" placeholder="Country">
+                <textarea id="text" name="bio" placeholder="Tell us about yourself!" ></textarea>
+                <a href="main.html">
+                <input type="submit" value="Sign up"></a>
+                <a href="log_in.html">
+                <div id="nopass">Already have an account? Log in.</div>
+                </a>
+            </form>
+            
+        </div>
+    </div>
+
+   
     
 </body>
 </html>
