@@ -5,12 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goal - log in</title>
-    <link rel="stylesheet" href="style_before_log.css">
-
+    <title>goal - Sign up today!</title>
+    <style>
+        
+        a {
+            align-self: center;
+            text-decoration: none;
+        }
+        .bar_text {
+            color:#BA3B0A;
+            font-size: 20px;
+            align-self: center;
+            margin:20px;
+        }
+        #separator {
+            flex-grow:10;
+        }
+        .login {
+            display:flex;
+            margin:10px;
+            align-self:center;
+            /*TEKST*/
+            color:#BA3B0A;
+            font-size:20px;
+            align-items:center;
+            text-align:center;
+            font-weight: bolder;
+            margin-right: 30px;
+            
+        }
+        #bar {
+            display:flex;
+            background-color:rgb(228, 180, 91);
+            width:100%;
+            height:50px;
+            border-bottom: solid 3px rgb(232, 183, 91);
+            box-shadow: 15px;
+            justify-content: space-around;
+            
+        }
+        .home {
+            background-color:rgb(231, 185, 101);
+            height:130px;
+            margin:0px;
+            padding:0px;
+            display:flex;
+            border: solid 1px rgb(225, 190, 110);
+            justify-content: space-around;
+            box-shadow: 20px;
+        }
+        html, body {
+            height:100%;
+        }
+        body{
+            background-color:beige;
+            margin:0px;
+        }
+        .log {
+            margin:10px;
+            display:flex;
+            height:400px;
+            width:550px;
+            background-color: rgb(231, 185, 101);
+            flex-wrap:wrap;
+            justify-content: center;
+            align-self:center;
+            margin:50px;
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width:100%;
+            padding: 6px 20px;
+            margin: 8px 0;
+            border: none;
+            background-color:#f5f5f5
+        }
+        input[type=submit]:hover {
+            background-color:#e9e9ed;
+        } 
+        #nopass {
+            display:flex;
+            justify-content: center;
+            text-decoration: none;
+            color:#BA3B0A;
+            font-style: italic;
+        }
+        #background, h3 {
+            display:flex;
+            width:100%;
+            justify-content: center;
+            align-self:center;
+            color:#BA3B0A;
+        }
+        h3 {
+            font-size:25px;
+        }
+    </style>
 </head>
 <body>
-    <div id="home">
+    <div class="home">
         <a href="home_page.html">
             <img id="y" src="logo.png" alt="logo:)" width="280px">
         </a>
@@ -32,7 +132,19 @@
         <div class="bar_text"> About Us</div>
         <div class="bar_text"> Contact </div>
     </div>
-
-    
+    <div id="background">
+        <div class="log"> 
+            <h3>Log in to achieve your goals!:)</h3>
+            <form>
+                <input type="text" id="email" name="email" placeholder="Email address">
+                <input type="text" id="password" name="password" placeholder="Your password">
+                <input type="submit" value="Log in">
+                <a href="https://hltv.org">
+                <div id="nopass">forgot your password?</div>
+                </a>
+            </form>
+            
+        </div>
+    </div>
 </body>
 </html>
