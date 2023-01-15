@@ -65,7 +65,7 @@
         .log {
             margin:10px;
             display:flex;
-            height:800px;
+            height:fit-content;
             width:750px;
             background-color: rgb(231, 185, 101);
             flex-wrap:wrap;
@@ -73,8 +73,11 @@
             align-self:center;
             margin:50px;
         }
+        
         select{
+            padding: 1px;
             color: #643b2b;   
+            border-radius:4px;
             margin-left: 10px;         
         }
         #gender {
@@ -190,7 +193,7 @@
     <div id="background">
         <div class="log"> 
             <h3>Sign up today!</h3>
-            <form>
+            <form action="main.html">
                 <input type="text" id="text" name="name" placeholder="Name">
                 <input type="text" id="text" name="surname" placeholder="Surname">
                 <input type="text" id="email" name="email" placeholder="Email address">
@@ -222,8 +225,9 @@
                 <textarea id="text" name="bio" placeholder="Tell us about yourself!" ></textarea>
                 <a href="main.html">
                 <input type="submit" value="Sign up"></a>
-                <a href="log_in.html">
+                <a href="after_logging_in.html">
                 <div id="nopass">Already have an account? Log in.</div>
+                <br>
                 </a>
             </form>
             
