@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goal - Do it today!</title>
+    <style>
+        
+        a {
+            align-self: center;
+            text-decoration: none;
+            color:black
+        }
+        .bar_text {
+            color:#BA3B0A;
+            font-size: 20px;
+            align-self: center;
+            margin:20px;
+        }
+        .separator {
+            flex-grow:10;
+        }
+        .login {
+            display:flex;
+            margin:10px;
+            align-self:center;
+            /*TEKST*/
+            color:#BA3B0A;
+            font-size:20px;
+            align-items:center;
+            text-align:center;
+            font-weight: bolder;
+            margin-right: 30px;
+            
+        }
+        .bar {
+            display:flex;
+            background-color:rgb(228, 180, 91);
+            width:100%;
+            height:50px;
+            border-bottom: solid 3px rgb(232, 183, 91);
+            box-shadow: 15px;
+            justify-content: space-around;
+            
+        }
+        #home {
+            background-color:rgb(231, 185, 101);
+            height:130px;
+            width:100%;
+            margin:0px;
+            padding:0px;
+            display:flex;
+            border: solid 1px rgb(225, 190, 110);
+            justify-content: space-around;
+            box-shadow: 20px;
+        }
+        html, body {
+            height:100%;
+        }
+        body{
+            background-color:beige;
+            margin:0px;
+        }
+        .background {
+            background-color: beige;
+            height:100%;
+            display:flex;
+            justify-content: space-around;
+            margin:40px;
+            flex-wrap:wrap;
+        }
+        .your_goals {
+            display:flex;
+            height:500px;
+            background-color: rgb(228, 180, 91);
+            width:400px;
+            margin:20px 0;
+            padding:20px;
+            flex-wrap:wrap;
+            justify-content: center;
+            border: 1px solid #BA3B0A;
+            border-radius:4px;
+        }
+        .header {
+            color:#BA3B0A;
+            font-weight:bold;
+            font-size:x-large;
+            margin:20px;
+        }
+        .table {
+            width:100%;
+            height:100%;
+        }
+        .goals {
+            display: flex;
+            width:100%;
+            background-color: rgb(231, 185, 101);
+            box-sizing: border-box;
+            border: 1px solid rgb(134, 115, 71);
+            border-radius: 4px;
+            margin:20px 0;
+            height:50px;
+            
+        }
+        .goal_text {
+            justify-content: center;
+            align-self: center;
+            margin:30px;
+        }
+        .create_a_goal {
+            display:flex;
+            height:200px;
+            background-color: rgb(228, 180, 91);
+            width:400px;
+            margin:20px 0;
+            padding: 20px;
+            flex-wrap:wrap;
+            justify-content: center;
+            border: 1px solid #BA3B0A;
+            border-radius:4px;
+            color:#BA3B0A;
+            align-items:center;
+            font-size:xx-large;
+            font-weight: bold;
+        }
+        #box {
+            display:flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="home">
+        <a href="after_logging_in.html">
+            <img id="y" src="logo.png" alt="logo:)" width="280px">
+        </a>
+            <div class="separator"> </div>
+       <a href="after_logging_in.html">
+            <div class="login i"> create a goal</div>
+        </a>
+        <a href="home_page.html">
+            <div class ="login u">log out</div>
+        </a>    
+
+        </div>    
+    </div>
+    <div class="bar">
+        <a href ="how_it_works.html">
+            <div class="bar_text"> How It Works</div>
+        </a>
+        
+        <div class="bar_text"> About Us</div>
+        <div class="bar_text"> Contact </div>
+    </div>
+
+    <div class="background">
+        <div class="your_goals">
+            <div class="header">YOUR GOALS!</div>
+            <div class="table">
+                <div class="goals">
+                    <div class="goal_text"> Goal 1 - name</div>
+                    <div class="separator"> </div>
+                    <a href="costam.html"> <div class="goal_text"> Details</div></a>
+                </div> 
+                <div class="goals">
+                    <div class="goal_text"> Goal 2 - name</div>
+                    <div class="separator"> </div>
+                    <a href="costam.html"> <div class="goal_text"> Details</div></a>                </div> 
+                <div class="goals">
+                    <div class="goal_text"> Goal 3 - name</div>
+                    <div class="separator"> </div>
+                    <a href="costam.html"> <div class="goal_text"> Details</div></a>                </div> 
+                <div class="goals">
+                    <div class="goal_text"> Goal 4 - name</div>
+                    <div class="separator"> </div>
+                    <a href="costam.html"> <div class="goal_text"> Details</div></a>                </div> 
+                <div class="goals">
+                    <div class="goal_text"> Goal 5 - name</div>
+                    <div class="separator"> </div>
+                    <a href="costam.html"> <div class="goal_text"> Details</div></a>                </div> 
+            </div>
+        </div>
+            <div id="box">
+                <a href="create_a_goal.html">
+                <div class="create_a_goal">CREATE A GOAL!</div>
+                </a>
+                <a href="costam.html">
+                <div class="create_a_goal">YOUR PROGRESS!</div>
+                </a>
+            </div>
+    </div>
+
+    
+</body>
+</html>
